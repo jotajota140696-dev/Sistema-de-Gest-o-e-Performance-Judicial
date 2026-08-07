@@ -1,0 +1,29 @@
+name: Robô Jurídico Diário
+
+on:
+  schedule:
+    - cron: '0 8 * * *' # Roda todo dia às 08:00 UTC
+  workflow_dispatch: # Permite que você clique em um botão para rodar manualmente quando quiser
+
+jobs:
+  executar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Copiar código do repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar ambiente Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Instalar dependências
+        run: |
+          pip install --no-cache-dir -r requirements.txt
+
+      - name: Executar o Robô de Varredura
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        run: |
+          python robo.py
