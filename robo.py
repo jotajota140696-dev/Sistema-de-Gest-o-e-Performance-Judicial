@@ -24,13 +24,11 @@ def executar_robo():
     for proc in processos:
         num_processo = proc.get("process_number")
         tipo = proc.get("process_type")
-         devedor = proc.get("debtor_name")
+        devedor = proc.get("debtor_name")
         
         print(f"Analisando Processo: {num_processo} | Tipo: {tipo} | Devedor: {devedor}")
         
-        # Aqui o robô faz a varredura nas fontes públicas dos tribunais (futuramente integrado com as chaves de acesso)
-        # Por enquanto, registramos a auditoria de acesso bem-sucedida (LGPD)
-        
+        # Registra a auditoria de acesso bem-sucedida (LGPD)
         log_dados = {
             "user_email": "robo-automatico@sistema.local",
             "action": "VARREDURA_DIARIA",
