@@ -1,42 +1,42 @@
 import os
-from supabase import create_client, Client
+from supabase import create_client
 
-# Recupera as credenciais de segurança do ambiente do GitHub
-url: str = os.environ.get("SUPABASE_URL")
-key: str = os.environ.get("SUPABASE_KEY")
+print("--- INICIANDO ROBÔ DE VARREDURA JURÍDICA ---")
+
+url = os.environ.get("SUPABASE_URL")
+key = os.environ.get("SUPABASE_KEY")
 
 if not url or not key:
-    print("Erro: As credenciais do Supabase não foram encontradas nas variáveis de ambiente.")
+    print("ERRO CRÍTICO: As credenciais do Supabase não foram encontradas.")
     exit(1)
 
-# Conecta ao nosso "cofre" (Supabase)
-supabase: Client = create_client(url, key)
+# Limpeza automática da URL para garantir compatibilidade com a biblioteca Python
+url = url.strip().rstrip("/")
+if url.endswith("/rest/v1"):
+    url = url[:-8]
 
-def executar_robo():
-    print("--- INICIANDO VARREDURA DOS PROCESSOS ---")
+try:
+    # Conecta ao Supabase
+    supabase = create_client(url, key)
+    print("Conexão com o cofre do Supabase estabelecida com sucesso.")
     
-    # Busca todos os processos ativos cadastrados no sistema
+    # Testa a leitura da tabela de processos
     resposta = supabase.table("processes").select("*").eq("status", "Ativo").execute()
     processos = resposta.data
     
-    print(f"Total de processos encontrados para monitoramento: {len(processos)}")
+    print(f"Total de processos ativos encontrados: {len(processos)}")
     
-    for proc in processos:
-        num_processo = proc.get("process_number")
-        tipo = proc.get("process_type")
-        devedor = proc.get("debtor_name")
-        
-        print(f"Analisando Processo: {num_processo} | Tipo: {tipo} | Devedor: {devedor}")
-        
-        # Registra a auditoria de acesso bem-sucedida (LGPD)
-        log_dados = {
-            "user_email": "robo-automatico@sistema.local",
-            "action": "VARREDURA_DIARIA",
-            "details": f"Processo {num_processo} verificado com sucesso pelo robô."
-        }
-        supabase.table("audit_logs").insert(log_dados).execute()
+    # Registra o log de auditoria LGPD
+    log_dados = {
+        "user_email": "robo-automatico@sistema.local",
+        "action": "VARREDURA_DIARIA",
+        "details": f"Varredura concluída. Total de processos verificados: {len(processos)}"
+    }
+    supabase.table("audit_logs").insert(log_dados).execute()
+    print("Log de auditoria LGPD gravado com sucesso.")
 
-    print("--- VARREDURA CONCLUÍDA COM SUCESSO ---")
+except Exception as e:
+    print(f"Ocorreu um erro durante a execução: {e}")
+    exit(1)
 
-if __name__ == "__main__":
-    executar_robo()
+print("--- EXECUÇÃO FINALIZADA COM SUCESSO ---")
