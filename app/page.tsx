@@ -17,7 +17,6 @@ import {
   Download
 } from 'lucide-react';
 
-// Dados simulados de exemplo para a visao analitica (caso a caso)
 const mockCasos = [
   { id: 1, contrato: "CC-98234", devedor: "Agropecuária Santa Rita Ltda", valor: "R$ 145.800,00", status: "Em Andamento", fase: "Judicial - Execução", assessor: "Equipe Alfa", diasAtraso: 340 },
   { id: 2, contrato: "CC-87122", devedor: "João Carlos de Souza", valor: "R$ 38.450,00", status: "Acordo Firmado", fase: "Homologação de Acordo", assessor: "Equipe Beta", diasAtraso: 180 },
@@ -41,7 +40,6 @@ export default function DashboardPage() {
   return (
     <div style={{ minHeight: '100vh', backgroundColor: '#090d16', color: '#f1f5f9', fontFamily: 'Inter, sans-serif' }}>
       
-      {/* Top Bar / Header */}
       <header style={{ borderBottom: '1px solid #1e293b', backgroundColor: '#0f172a', padding: '16px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
           <div style={{ backgroundColor: '#2563eb', padding: '10px', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -60,7 +58,6 @@ export default function DashboardPage() {
         </div>
       </header>
 
-      {/* Navegação por Abas */}
       <div style={{ backgroundColor: '#0f172a', padding: '0 32px', borderBottom: '1px solid #1e293b', display: 'flex', gap: '24px' }}>
         <button
           onClick={() => setAbaAtiva('gerencial')}
@@ -101,13 +98,10 @@ export default function DashboardPage() {
         </button>
       </div>
 
-      {/* Conteúdo Principal */}
       <main style={{ padding: '32px', maxWidth: '1400px', margin: '0 auto' }}>
 
-        {/* ABA 1: VISÃO GERENCIAL */}
         {abaAtiva === 'gerencial' && (
           <div>
-            {/* Cards de Métricas Principais */}
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '20px', marginBottom: '32px' }}>
               <div style={{ backgroundColor: '#111827', border: '1px solid #1f2937', borderRadius: '12px', padding: '20px' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
@@ -150,10 +144,7 @@ export default function DashboardPage() {
               </div>
             </div>
 
-            {/* Seção Secundária: Ranking e Alertas */}
             <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '24px' }}>
-              
-              {/* Ranking de Assessorias / Equipes */}
               <div style={{ backgroundColor: '#111827', border: '1px solid #1f2937', borderRadius: '12px', padding: '24px' }}>
                 <h3 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '16px', marginTop: 0 }}>Desempenho por Equipe / Assessorias</h3>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
@@ -172,7 +163,6 @@ export default function DashboardPage() {
                 </div>
               </div>
 
-              {/* Alertas e Prazos Processuais */}
               <div style={{ backgroundColor: '#111827', border: '1px solid #1f2937', borderRadius: '12px', padding: '24px' }}>
                 <h3 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '16px', marginTop: 0 }}>Próximos Prazos / Alertas</h3>
                 <div style={{ fontSize: '13px', color: '#94a3b8', display: 'flex', flexDirection: 'column', gap: '12px' }}>
@@ -186,17 +176,14 @@ export default function DashboardPage() {
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         )}
 
-        {/* ABA 2: PAINEL ANALÍTICO (CASO A CASO) */}
         {abaAtiva === 'analitico' && (
           <div style={{ backgroundColor: '#111827', border: '1px solid #1f2937', borderRadius: '12px', padding: '24px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', flexWrap: 'wrap', gap: '12px' }}>
               
-              {/* Barra de Busca */}
               <div style={{ position: 'relative', flex: '1', minWidth: '280px' }}>
                 <Search size={18} style={{ position: 'absolute', left: '12px', top: '12px', color: '#94a3b8' }} />
                 <input
@@ -217,7 +204,6 @@ export default function DashboardPage() {
                 />
               </div>
 
-              {/* Filtros */}
               <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px', backgroundColor: '#1f2937', padding: '8px 12px', borderRadius: '8px', border: '1px solid #374151' }}>
                   <Filter size={16} color="#94a3b8" />
@@ -242,7 +228,6 @@ export default function DashboardPage() {
 
             </div>
 
-            {/* Tabela de Casos */}
             <div style={{ overflowX: 'auto' }}>
               <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '14px' }}>
                 <thead>
