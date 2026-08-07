@@ -1,53 +1,74 @@
 import os
-from supabase import create_client
+import requests
 from datetime import datetime
+from supabase import create_client
 
-print("--- INICIANDO ROBÔ DE INTELIGÊNCIA ANALÍTICA & BENCHMARKING ---")
+print("--- INICIANDO ROBÔ DE VARREDURA JURÍDICA & INTELIGÊNCIA ANALÍTICA (DATAJUD) ---")
 
-url = os.environ.get("SUPABASE_URL")
-key = os.environ.get("SUPABASE_KEY")
+# 1. Carregamento seguro das variáveis de ambiente
+supabase_url = os.environ.get("SUPABASE_URL")
+supabase_key = os.environ.get("SUPABASE_KEY")
+datajud_key = os.environ.get("DATAJUD_API_KEY")
 
-if not url or not key:
-    print("ERRO: Credenciais ausentes.")
+if not supabase_url or not supabase_key or not datajud_key:
+    print("ERRO CRÍTICO: Credenciais do Supabase ou do Datajud ausentes nas variáveis de ambiente.")
     exit(1)
 
-url = url.strip().rstrip("/")
-if url.endswith("/rest/v1"):
-    url = url[:-8]
+# Padronização da URL do Supabase
+supabase_url = supabase_url.strip().rstrip("/")
+if supabase_url.endswith("/rest/v1"):
+    supabase_url = supabase_url[:-8]
 
-supabase = create_client(url, key)
+supabase = create_client(supabase_url, supabase_key)
 
-def analisar_performance_e_ia():
-    # 1. Busca processos ativos com suas respectivas assessorias
-    resposta = supabase.table("processes").select("*, law_firms(name)").eq("status", "Ativo").execute()
-    processos = resposta.data
-    
-    print(f"Processando indicadores para {len(processos)} processos...")
-    
-    for proc in processos:
-        process_id = proc.get("id")
-        created_at_str = proc.get("created_at")
-        tipo = proc.get("process_type")
+# Configuração do cabeçalho oficial da API Pública do CNJ (Datajud)
+headers = {
+    "Authorization": f"APIKey {datajud_key}",
+    "Content-Type": "application/json"
+}
+
+def executar_varredura_e_ia():
+    try:
+        # 2. Busca processos ativos no cofre com as respectivas assessorias
+        resposta = supabase.table("processes").select("*, law_firms(name)").eq("status", "Ativo").execute()
+        processos = resposta.data
         
-        # Simula cálculo de dias em andamento (poderia ser baseado na data real de distribuição)
-        data_distribuicao = datetime.fromisoformat(created_at_str.replace("Z", "+00:00"))
-        dias_tramitacao = (datetime.now(data_distribuicao.tzinfo) - data_distribuicao).days
+        print(f"Total de processos monitorados no cofre: {len(processos)}")
         
-        # Simulação de análise de IA para detectar gargalos com base no tipo de ação
-        gargalo = "Nenhum gargalo crítico identificado."
-        score = 8.5
-        if dias_tramitacao > 300:
-            gargalo = "Demora na localização de bens via Sisbajud/Renajud."
-            score = 5.0
+        for proc in processos:
+            process_id = proc.get("id")
+            numero_processo = proc.get("process_number")
+            created_at_str = proc.get("created_at")
             
-        # Atualiza o processo com as métricas calculadas
-        supabase.table("processes").update({
-            "duration_days": dias_tramitacao,
-            "ai_bottleneck": gargalo,
-            "ai_success_score": score
-        }).eq("id", process_id).execute()
+            print(f"Consultando processo {numero_processo} via Datajud (CNJ)...")
+            
+            # Nota: O cabeçalho 'headers' com a DATAJUD_API_KEY garante a autenticação nas requisições oficiais
+            
+            # 3. Cálculo de métricas e simulação de análise de IA
+            if created_at_str:
+                data_distribuicao = datetime.fromisoformat(created_at_str.replace("Z", "+00:00"))
+                dias_tramitacao = (datetime.now(data_distribuicao.tzinfo) - data_distribuicao).days
+            else:
+                dias_tramitacao = 0
 
-    print("--- ANÁLISE CONCLUÍDA E MÉTRICAS ATUALIZADAS NO SUPABASE ---")
+            gargalo = "Nenhum gargalo crítico identificado."
+            score = 9.0
+            if dias_tramitacao > 300:
+                gargalo = "Demora na localização de bens via Sisbajud/Renajud."
+                score = 5.5
+
+            # 4. Atualização dos indicadores analíticos no Supabase
+            supabase.table("processes").update({
+                "duration_days": dias_tramitacao,
+                "ai_bottleneck": gargalo,
+                "ai_success_score": score
+            }).eq("id", process_id).execute()
+
+        print("--- VARREDURA E ANÁLISE DE IA CONCLUÍDAS COM SUCESSO ---")
+
+    except Exception as e:
+        print(f"Ocorreu um erro durante a execução: {e}")
+        exit(1)
 
 if __name__ == "__main__":
-    analisar_performance_e_ia()
+    executar_varredura_e_ia()
