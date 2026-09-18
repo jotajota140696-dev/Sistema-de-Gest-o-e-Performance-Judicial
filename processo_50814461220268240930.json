@@ -1,0 +1,78 @@
+{
+    "id": "TJSC_G1_50814461220268240930",
+    "tribunal": "TJSC",
+    "grau": "G1",
+    "numeroProcesso": "50814461220268240930",
+    "dataAjuizamento": "20260618112729",
+    "nivelSigilo": 0,
+    "orgaoJulgador": {
+        "codigo": 82982,
+        "nome": "Vara Estadual de Direito Bancário",
+        "codigoMunicipioIBGE": 4205407
+    },
+    "classe": {
+        "codigo": 172,
+        "nome": "Embargos à Execução"
+    },
+    "sistema": {
+        "codigo": 4,
+        "nome": "Projudi"
+    },
+    "formato": {
+        "codigo": 1,
+        "nome": "Eletrônico"
+    },
+    "dataHoraUltimaAtualizacao": "2026-07-12T00:51:48.901000Z",
+    "@timestamp": "2026-07-12T00:51:48.901000Z",
+    "movimentos": [
+        {
+            "codigo": 51,
+            "dataHora": "2026-06-19T05:50:40.000Z",
+            "nome": "Conclusão",
+            "complementosTabelados": [
+                {
+                    "codigo": 3,
+                    "descricao": "tipo_de_conclusao",
+                    "valor": 5,
+                    "nome": "para despacho"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "82982",
+                "nome": "Vara Estadual de Direito Bancário"
+            }
+        },
+        {
+            "codigo": 26,
+            "dataHora": "2026-06-18T11:27:29.000Z",
+            "nome": "Distribuição",
+            "complementosTabelados": [
+                {
+                    "codigo": 2,
+                    "descricao": "tipo_de_distribuicao_redistribuicao",
+                    "valor": 4,
+                    "nome": "dependência"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "82982",
+                "nome": "Vara Estadual de Direito Bancário"
+            }
+        },
+        {
+            "codigo": 14736,
+            "dataHora": "2026-06-18T11:27:30.000Z",
+            "nome": "Inclusão no Juízo 100% Digital",
+            "orgaoJulgador": {
+                "codigo": "82982",
+                "nome": "Vara Estadual de Direito Bancário"
+            }
+        }
+    ],
+    "assuntos": [
+        {
+            "codigo": 11974,
+            "nome": "Cláusulas Abusivas"
+        }
+    ]
+}

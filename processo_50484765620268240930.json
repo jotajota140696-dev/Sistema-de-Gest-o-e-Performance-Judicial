@@ -1,0 +1,121 @@
+{
+    "numeroProcesso": "50484765620268240930",
+    "classe": {
+        "codigo": 12154,
+        "nome": "Execução de Título Extrajudicial"
+    },
+    "sistema": {
+        "codigo": 4,
+        "nome": "Projudi"
+    },
+    "formato": {
+        "codigo": 1,
+        "nome": "Eletrônico"
+    },
+    "tribunal": "TJSC",
+    "dataHoraUltimaAtualizacao": "2026-05-11T17:14:25.832000Z",
+    "grau": "G1",
+    "@timestamp": "2026-05-11T17:14:25.832000Z",
+    "dataAjuizamento": "20260415153328",
+    "movimentos": [
+        {
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "valor": 80,
+                    "nome": "Outros documentos",
+                    "descricao": "tipo_de_documento"
+                }
+            ],
+            "codigo": 581,
+            "nome": "Documento",
+            "dataHora": "2026-04-30T04:14:07.000Z",
+            "orgaoJulgador": {
+                "codigo": "82982",
+                "nome": "Vara Estadual de Direito Bancário"
+            }
+        },
+        {
+            "codigo": 12291,
+            "nome": "Movimentação processual",
+            "dataHora": "2026-04-30T04:14:06.000Z",
+            "orgaoJulgador": {
+                "codigo": "82982",
+                "nome": "Vara Estadual de Direito Bancário"
+            }
+        },
+        {
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "valor": 116,
+                    "nome": "Informações",
+                    "descricao": "tipo_de_documento"
+                }
+            ],
+            "codigo": 581,
+            "nome": "Documento",
+            "dataHora": "2026-04-15T16:08:51.000Z",
+            "orgaoJulgador": {
+                "codigo": "82982",
+                "nome": "Vara Estadual de Direito Bancário"
+            }
+        },
+        {
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "valor": 80,
+                    "nome": "Outros documentos",
+                    "descricao": "tipo_de_documento"
+                }
+            ],
+            "codigo": 581,
+            "nome": "Documento",
+            "dataHora": "2026-04-15T15:33:50.000Z",
+            "orgaoJulgador": {
+                "codigo": "82982",
+                "nome": "Vara Estadual de Direito Bancário"
+            }
+        },
+        {
+            "complementosTabelados": [
+                {
+                    "codigo": 2,
+                    "valor": 2,
+                    "nome": "sorteio",
+                    "descricao": "tipo_de_distribuicao_redistribuicao"
+                }
+            ],
+            "codigo": 26,
+            "nome": "Distribuição",
+            "dataHora": "2026-04-15T15:33:28.000Z",
+            "orgaoJulgador": {
+                "codigo": "82982",
+                "nome": "Vara Estadual de Direito Bancário"
+            }
+        },
+        {
+            "codigo": 14736,
+            "nome": "Inclusão no Juízo 100% Digital",
+            "dataHora": "2026-04-15T15:33:30.000Z",
+            "orgaoJulgador": {
+                "codigo": "82982",
+                "nome": "Vara Estadual de Direito Bancário"
+            }
+        }
+    ],
+    "id": "TJSC_G1_50484765620268240930",
+    "nivelSigilo": 0,
+    "orgaoJulgador": {
+        "codigoMunicipioIBGE": 4205407,
+        "codigo": 82982,
+        "nome": "Vara Estadual de Direito Bancário"
+    },
+    "assuntos": [
+        {
+            "codigo": 7717,
+            "nome": "Espécies de Títulos de Crédito"
+        }
+    ]
+}

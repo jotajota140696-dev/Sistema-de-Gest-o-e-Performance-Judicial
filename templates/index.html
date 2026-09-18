@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C3 • Centro de Comando e Controle | Gestão Jurídica 360°</title>
+    
+    <!-- CSS Tailwind & FontAwesome -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- DataTables & jQuery & Bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        cardBg: '#1e293b',
+                        accentBlue: '#3b82f6',
+                        successGreen: '#10b981',
+                        warningYellow: '#f59e0b',
+                        dangerRed: '#ef4444'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .dataTables_wrapper { color: #94a3b8; font-size: 0.75rem; }
+        .dataTables_length select, .dataTables_filter input {
+            background-color: #0f172a;
+            border: 1px solid #334155;
+            color: #f8fafc;
+            border-radius: 0.375rem;
+            padding: 0.25rem 0.5rem;
+        }
+        table.dataTable tbody tr { background-color: transparent !important; }
+        table.dataTable tbody tr:hover { background-color: rgba(51, 65, 85, 0.4) !important; }
+    </style>
+</head>
+<body class="bg-darkBg text-slate-100 font-sans antialiased min-h-screen flex flex-col">
+
+    <!-- Top Navbar / Command Bar -->
+    <header class="bg-cardBg border-b border-slate-800 px-6 py-3 flex flex-col md:flex-row justify-between items-center sticky top-0 z-50 gap-4">
+        <div class="flex items-center space-x-3 w-full md:w-auto justify-between md:justify-start">
+            <div class="flex items-center space-x-3">
+                <div class="bg-accentBlue p-2 rounded-lg text-white font-bold">
+                    <i class="fa-solid fa-shield-halved text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="font-bold text-lg leading-tight">C3 • Centro de Comando e Controle</h1>
+                    <p class="text-xs text-slate-400">Inteligência de Recuperação de Crédito & Auditoria de Assessorias</p>
+                </div>
+            </div>
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                Robô RPA & Base Real
+            </span>
+        </div>
+
+        <!-- Cabeçalho de Filtros Globais -->
+        <form id="form-filtros" onsubmit="aplicarFiltros(event)" class="flex flex-wrap items-center gap-2 w-full md:w-auto">
+            <div>
+                <label class="block text-[10px] uppercase text-slate-400 font-semibold mb-0.5">Cliente / Credor</label>
+                <select name="cliente" id="filtro-cliente" class="bg-slate-800 border border-slate-700 rounded px-2 py-1 text-xs text-slate-200 focus:outline-none focus:border-accentBlue">
+                    <option value="TODOS">Digite ou selecione...</option>
+                    <option value="Cresol Central Brasil">Cresol Central Brasil</option>
+                    <option value="Cresol Litoral">Cresol Litoral</option>
+                </select>
+            </div>
+            <div>
+                <label class="block text-[10px] uppercase text-slate-400 font-semibold mb-0.5">Assessoria Jurídica</label>
+                <select name="assessoria" id="filtro-assessoria" class="bg-slate-800 border border-slate-700 rounded px-2 py-1 text-xs text-slate-200 focus:outline-none focus:border-accentBlue">
+                    <option value="TODOS">Ex: Alfa, Beta...</option>
+                    <option value="Escritório Alfa">Escritório Alfa</option>
+                    <option value="Escritório Beta">Escritório Beta</option>
+                    <option value="Jurídico Interno">Jurídico Interno</option>
+                </select>
+            </div>
+            <div>
+                <label class="block text-[10px] uppercase text-slate-400 font-semibold mb-0.5">Parte Ativa / Credor</label>
+                <input type="text" name="parte_ativa" id="filtro-parte-ativa" placeholder="Ex: Cresol..." class="bg-slate-800 border border-slate-700 rounded px-2 py-1 text-xs text-slate-200 focus:outline-none focus:border-accentBlue w-28">
+            </div>
+            <div>
+                <label class="block text-[10px] uppercase text-slate-400 font-semibold mb-0.5">Parte Passiva / Devedor</label>
+                <input type="text" name="parte_passiva" id="filtro-parte-passiva" placeholder="Nome ou CPF/CNPJ" class="bg-slate-800 border border-slate-700 rounded px-2 py-1 text-xs text-slate-200 focus:outline-none focus:border-accentBlue w-32">
+            </div>
+            <div>
+                <label class="block text-[10px] uppercase text-slate-400 font-semibold mb-0.5">Período (Ano / Mês)</label>
+                <select name="periodo" id="filtro-periodo" class="bg-slate-800 border border-slate-700 rounded px-2 py-1 text-xs text-slate-200 focus:outline-none focus:border-accentBlue">
+                    <option value="TODOS">Todos os Períodos</option>
+                    <option value="2026-09">Setembro de 2026</option>
+                </select>
+            </div>
+            <div>
+                <label class="block text-[10px] uppercase text-slate-400 font-semibold mb-0.5">Base / Carteira</label>
+                <select name="carteira" id="filtro-carteira" class="bg-slate-800 border border-slate-700 rounded px-2 py-1 text-xs text-slate-200 focus:outline-none focus:border-accentBlue">
+                    <option value="TODAS">Todas as Bases</option>
+                    <option value="Ajuizados">Ajuizados</option>
+                    <option value="Pré-Judicial">Pré-Judicial</option>
+                </select>
+            </div>
+            <div class="self-end">
+                <button type="submit" class="bg-accentBlue hover:bg-blue-600 text-white font-semibold text-xs px-4 py-1.5 rounded transition flex items-center gap-1">
+                    <i class="fa-solid fa-filter text-[10px]"></i> Filtrar
+                </button>
+            </div>
+        </form>
+    </header>
+
+    <!-- App Layout -->
+    <div class="flex flex-1 overflow-hidden">
+        
+        <!-- Sidebar Navigation -->
+        <aside class="w-64 bg-slate-900 border-r border-slate-800 p-4 flex flex-col justify-between shrink-0">
+            <nav class="space-y-1">
+                <button id="btn-torre" onclick="switchTab('torre')" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium bg-accentBlue text-white transition">
+                    <i class="fa-solid fa-chart-pie w-5"></i> Torre de Controle (Macro)
+                </button>
+                <button id="btn-ranking" onclick="switchTab('ranking')" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-400 hover:bg-slate-800 hover:text-white transition">
+                    <i class="fa-solid fa-trophy w-5"></i> Ranqueamento 360º
+                </button>
+                <button id="btn-funil" onclick="switchTab('funil')" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-400 hover:bg-slate-800 hover:text-white transition">
+                    <i class="fa-solid fa-filter-circle-dollar w-5"></i> Funil de Recuperação
+                </button>
+                <button id="btn-prontuario" onclick="switchTab('prontuario')" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-400 hover:bg-slate-800 hover:text-white transition">
+                    <i class="fa-solid fa-folder-open w-5"></i> Prontuários (Micro / Drill-down)
+                </button>
+                <button id="btn-radar" onclick="switchTab('radar')" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-400 hover:bg-slate-800 hover:text-white transition">
+                    <i class="fa-solid fa-triangle-exclamation w-5"></i> Radar de Gargalos & Alertas
+                </button>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="flex-1 p-6 space-y-6 overflow-y-auto">
+
+            <!-- TAB 1: TORRE DE CONTROLE MACRO -->
+            <section id="tab-torre" class="tab-content space-y-6">
+                
+                <!-- KPIs Cards Grid (Valores da Base Real) -->
+                <div class="w-full grid grid-cols-1 md:grid-cols-4 gap-4">
+                    
+                    <!-- KPI 1: ACORDOS HOMOLOGADOS (MÊS) -->
+                    <div class="bg-cardBg p-4 rounded-xl border border-slate-800 relative flex flex-col justify-between">
+                        <div class="flex justify-between items-start">
+                            <span class="text-[11px] text-slate-400 font-semibold uppercase tracking-wider">Acordos Homologados (Mês)</span>
+                            <span id="kpi-acordos-mediana" class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30">
+                                {{ dados.kpis.acordos_mediana }}
+                            </span>
+                        </div>
+                        <div id="kpi-acordos-qtd" class="text-2xl font-bold mt-2 text-white">{{ dados.kpis.acordos_qtd }}</div>
+                        <span id="kpi-acordos-meta" class="text-xs text-slate-400 mt-2 block border-t border-slate-800/80 pt-1.5">{{ dados.kpis.acordos_meta }}</span>
+                    </div>
+
+                    <!-- KPI 2: Lead Time Médio (Causas) + Mediana + Etapas Reais -->
+                    <div class="bg-cardBg p-4 rounded-xl border border-slate-800 relative">
+                        <div class="flex justify-between items-start">
+                            <span class="text-[11px] text-slate-400 font-semibold uppercase tracking-wider">Lead Time Médio (Causas)</span>
+                            <span id="kpi-mediana" class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30">
+                                {{ dados.kpis.mediana_lead_time }}
+                            </span>
+                        </div>
+                        <div id="kpi-leadtime" class="text-2xl font-bold mt-2 text-white">{{ dados.kpis.lead_time }}</div>
+                        <span id="kpi-meta-leadtime" class="text-xs text-slate-400 mt-1 block">{{ dados.kpis.meta_lead_time }}</span>
+
+                        <!-- 3 Etapas Processuais Reais -->
+                        <div class="mt-3 pt-2 border-t border-slate-800/80 grid grid-cols-3 gap-1 text-[10px] text-slate-400 text-center">
+                            <div class="bg-slate-900/60 p-1 rounded" title="Distribuição à Citação">
+                                <span class="block font-bold text-slate-300">1. Distr. ➔ Citação</span>
+                                <span id="lt-etapa1" class="text-accentBlue font-mono font-bold">{{ dados.kpis.lead_time_etapas.etapa1 }}</span>
+                            </div>
+                            <div class="bg-slate-900/60 p-1 rounded" title="Citação à Penhora">
+                                <span class="block font-bold text-slate-300">2. Citação ➔ Penhora</span>
+                                <span id="lt-etapa2" class="text-amber-400 font-mono font-bold">{{ dados.kpis.lead_time_etapas.etapa2 }}</span>
+                            </div>
+                            <div class="bg-slate-900/60 p-1 rounded" title="Penhora ao Êxito">
+                                <span class="block font-bold text-slate-300">3. Penhora ➔ Êxito</span>
+                                <span id="lt-etapa3" class="text-emerald-400 font-mono font-bold">{{ dados.kpis.lead_time_etapas.etapa3 }}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- KPI 3: EFICIÊNCIA SISBAJUD/RENAJUD -->
+                    <div class="bg-cardBg p-4 rounded-xl border border-slate-800 relative flex flex-col justify-between">
+                        <div class="flex justify-between items-start">
+                            <span class="text-[11px] text-slate-400 font-semibold uppercase tracking-wider">Eficiência SISBAJUD/RENAJUD</span>
+                            <span id="kpi-sisbajud-mediana" class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30">
+                                {{ dados.kpis.sisbajud_mediana }}
+                            </span>
+                        </div>
+                        <div id="kpi-sisbajud-qtd" class="text-2xl font-bold mt-2 text-white">{{ dados.kpis.sisbajud_qtd }}</div>
+                        <span id="kpi-sisbajud-meta" class="text-xs text-slate-400 mt-2 block border-t border-slate-800/80 pt-1.5">{{ dados.kpis.sisbajud_meta }}</span>
+                    </div>
+
+                    <!-- KPI 4: VOLUME EM RISCO (PASSIVO) -->
+                    <div class="bg-cardBg p-4 rounded-xl border border-slate-800 relative flex flex-col justify-between">
+                        <div class="flex justify-between items-start">
+                            <span class="text-[11px] text-slate-400 font-semibold uppercase tracking-wider">Volume em Risco (Passivo)</span>
+                            <span id="kpi-passivo-mediana" class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30">
+                                {{ dados.kpis.passivo_mediana }}
+                            </span>
+                        </div>
+                        <div id="kpi-passivo-qtd" class="text-2xl font-bold mt-2 text-red-400">{{ dados.kpis.passivo_qtd }}</div>
+                        <span id="kpi-passivo-fav" class="text-xs text-emerald-400 font-medium mt-2 block border-t border-slate-800/80 pt-1.5">{{ dados.kpis.passivo_favoravel_sub }}</span>
+                    </div>
+                </div> <!-- ADICIONE APENAS ESTA LINHA AQUI -->
+
+                <!-- Funil de Recuperação & Diagnóstico Cognitivo IA -->
+                <div class="w-full grid grid-cols-1 lg:grid-cols-4 gap-6">
+                    
+                    <div class="lg:col-span-3 bg-cardBg p-5 rounded-xl border border-slate-800 space-y-4">
+                        <h2 class="font-bold text-base flex items-center justify-between text-white">
+                            <span>Funil de Recuperação de Crédito (Jornada de Ouro)</span>
+                            <span class="text-xs font-normal text-slate-400">Total na Base: {{ dados.funil.total_distribuidos }}</span>
+                        </h2>
+
+                        <div class="space-y-4 pt-2">
+                            <div>
+                                <div class="flex justify-between text-xs mb-1">
+                                    <span class="text-slate-200">1. Ignição & Citação (M0 a M2)</span>
+                                    <span id="funil-fase1-text" class="text-slate-400">{{ dados.funil.fase1_qtd }} processos ({{ dados.funil.fase1_pct }}%)</span>
+                                </div>
+                                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                                    <div id="funil-fase1-bar" class="bg-accentBlue h-full" style="width: {{ dados.funil.fase1_pct }}%"></div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="flex justify-between text-xs mb-1">
+                                    <span class="text-slate-200">2. Constrição Patrimonial Padrão (M3 a M5)</span>
+                                    <span id="funil-fase2-text" class="text-slate-400">{{ dados.funil.fase2_qtd }} processos ({{ dados.funil.fase2_pct }}%)</span>
+                                </div>
+                                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                                    <div id="funil-fase2-bar" class="bg-indigo-500 h-full" style="width: {{ dados.funil.fase2_pct }}%"></div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="flex justify-between text-xs mb-1">
+                                    <span class="text-slate-200">3. Escalada & Hardball (M6 a M7 - IDPJ / Medidas Atípicas)</span>
+                                    <span id="funil-fase3-text" class="text-slate-400">{{ dados.funil.fase3_qtd }} processos ({{ dados.funil.fase3_pct }}%)</span>
+                                </div>
+                                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                                    <div id="funil-fase3-bar" class="bg-amber-500 h-full" style="width: {{ dados.funil.fase3_pct }}%"></div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="flex justify-between text-xs mb-1">
+                                    <span class="text-slate-200">4. Liquidação & Caixa Efetivo (M8 a M10)</span>
+                                    <span id="funil-fase4-text" class="text-emerald-400 font-semibold">{{ dados.funil.fase4_qtd }} finalizados ({{ dados.funil.fase4_pct }}%)</span>
+                                </div>
+                                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                                    <div id="funil-fase4-bar" class="bg-emerald-500 h-full" style="width: {{ dados.funil.fase4_pct }}%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Diagnóstico Cognitivo (IA) Clicável na Base Real -->
+                    <div class="lg:col-span-1 bg-cardBg p-5 rounded-xl border border-slate-800 flex flex-col justify-between">
+                        <div>
+                            <h2 class="font-bold text-base flex items-center gap-2 mb-4 text-white">
+                                <i class="fa-solid fa-brain text-accentBlue"></i> Diagnóstico Cognitivo (IA)
+                            </h2>
+
+                            <div id="container-alertas-ia" class="space-y-3">
+                                {% for a in dados.alertas_ia %}
+                                <div onclick="verProcessosDiagnostico('{{ a.id }}')" class="p-3 border rounded-lg cursor-pointer hover:bg-slate-800/80 transition {{ a.border_class }}">
+                                    <span class="text-xs font-semibold flex items-center gap-1.5 {{ a.tipo_class }}">
+                                        <i class="fa-solid {{ a.icon }}"></i> {{ a.tipo }}
+                                    </span>
+                                    <p class="text-xs text-slate-200 font-medium mt-1">{{ a.titulo }}</p>
+                                    <p class="text-[11px] text-slate-400 mt-0.5">{{ a.descricao }}</p>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <button onclick="verProcessosDiagnostico('todos')" class="w-full mt-4 bg-slate-900 hover:bg-slate-800 text-xs text-slate-300 font-medium py-2 rounded border border-slate-800 transition">
+                            Ver Processos Mapeados Pela IA
+                        </button>
+                    </div>
+                </div>
+
+                <!-- RANQUEAMENTO 360º DE ASSESSORIAS & BENCHMARK (BASE REAL DA TABELA PROCESSOS) -->
+                <div class="w-full bg-cardBg rounded-xl border border-slate-800 overflow-hidden">
+                    <div class="p-4 border-b border-slate-800 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
+                        <h2 class="font-bold text-base text-white flex items-center gap-2">
+                            <i class="fa-solid fa-trophy text-amber-400"></i> Ranqueamento 360º de Assessorias & Benchmark
+                        </h2>
+                        <span class="text-[10px] text-slate-400 bg-slate-900 px-3 py-1 rounded border border-slate-800">
+                            Pesos: 40% Velocidade Caixa | 30% Sucesso Bloqueio | 20% Mitigação Risco | 10% SLA
+                        </span>
+                    </div>
+
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse text-xs">
+                            <thead>
+                                <tr class="bg-slate-900/90 text-slate-400 uppercase text-[10px] font-bold tracking-wider border-b border-slate-800">
+                                    <th class="p-3">POSIÇÃO / ASSESSORIA</th>
+                                    <th class="p-3">SCORE 360</th>
+                                    <th class="p-3 text-amber-400">VELOCIDADE NOS ÊXITOS DOS ATOS</th>
+                                    <th class="p-3">SUCESSO APREENSÃO / BLOQUEIO</th>
+                                    <th class="p-3">PASSIVOS / PERDAS</th>
+                                    <th class="p-3">STATUS SLA DINÂMICO</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody-ranking-torre" class="divide-y divide-slate-800/80 text-slate-200">
+                                {% for r in dados.assessorias_ranking %}
+                                <tr class="hover:bg-slate-800/40 transition">
+                                    <td class="p-3 font-semibold text-white">{{ r.posicao }} • {{ r.nome }}</td>
+                                    <td class="p-3 text-emerald-400 font-bold text-sm">{{ r.score_360 }}</td>
+                                    <td class="p-3 font-mono text-amber-400 font-semibold">{{ r.velocidade_exitos }}</td>
+                                    <td class="p-3 font-mono text-slate-300">{{ r.sucesso_bloqueio }}</td>
+                                    <td class="p-3 font-medium text-slate-300">{{ r.passivos_perdas }}</td>
+                                    <td class="p-3 font-semibold {{ r.status_class }}">{{ r.status_sla }}</td>
+                                </tr>
+                                {% else %}
+                                <tr>
+                                    <td colspan="6" class="p-4 text-center text-slate-500">Nenhuma assessoria encontrada na base para os filtros selecionados.</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- TAB 2: AUDITORIA DE SLA -->
+            <section id="tab-ranking" class="tab-content hidden space-y-6">
+                <div class="bg-cardBg p-5 rounded-xl border border-slate-800">
+                    <h2 class="font-bold text-lg text-white mb-2">Auditoria Completa de SLA de Escritórios</h2>
+                </div>
+            </section>
+
+            <!-- TAB 3: FUNIL DETALHADO -->
+            <section id="tab-funil" class="tab-content hidden space-y-6">
+                <div class="bg-cardBg p-6 rounded-xl border border-slate-800 space-y-4">
+                    <h2 class="font-bold text-lg text-white">Funil de Recuperação de Crédito Detalhado</h2>
+                </div>
+            </section>
+
+            <!-- TAB 4: PRONTUÁRIOS INDIVIDUAIS (VISÃO MICRO) -->
+            <section id="tab-prontuario" class="tab-content hidden space-y-6">
+                <div class="bg-cardBg p-5 rounded-xl border border-slate-800 space-y-4">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                        <div>
+                            <h2 class="font-bold text-lg text-white">Prontuários Individuais (Drill-down Micro)</h2>
+                            <p class="text-xs text-slate-400">Filtragem ativa por digitação no cabeçalho e abertura de árvore.</p>
+                        </div>
+                    </div>
+
+                    <div class="overflow-x-auto">
+                        <table id="tabelaProcessos" class="w-full text-left border-collapse text-xs">
+                            <thead>
+                                <tr class="bg-slate-900/80 text-slate-400 uppercase border-b border-slate-800">
+                                    <th class="p-3">Processo (NPU)</th>
+                                    <th class="p-3">Credor (Polo Ativo)</th>
+                                    <th class="p-3">Devedor (Polo Passivo)</th>
+                                    <th class="p-3">Comarca / Vara</th>
+                                    <th class="p-3">Fase Atual</th>
+                                    <th class="p-3">Score</th>
+                                    <th class="p-3">Ações</th>
+                                </tr>
+                                <tr id="filtrosCabecalho" class="bg-slate-900/50">
+                                    <th class="p-1"><input type="text" class="w-full bg-slate-800 border border-slate-700 text-white rounded px-2 py-1 text-[11px]" placeholder="Filtrar NPU..."></th>
+                                    <th class="p-1"><input type="text" class="w-full bg-slate-800 border border-slate-700 text-white rounded px-2 py-1 text-[11px]" placeholder="Filtrar Credor..."></th>
+                                    <th class="p-1"><input type="text" class="w-full bg-slate-800 border border-slate-700 text-white rounded px-2 py-1 text-[11px]" placeholder="Filtrar Devedor..."></th>
+                                    <th class="p-1"><input type="text" class="w-full bg-slate-800 border border-slate-700 text-white rounded px-2 py-1 text-[11px]" placeholder="Filtrar Comarca..."></th>
+                                    <th class="p-1"><input type="text" class="w-full bg-slate-800 border border-slate-700 text-white rounded px-2 py-1 text-[11px]" placeholder="Filtrar Fase..."></th>
+                                    <th class="p-1"><input type="text" class="w-full bg-slate-800 border border-slate-700 text-white rounded px-2 py-1 text-[11px]" placeholder="Score..."></th>
+                                    <th class="p-1"></th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody-prontuario" class="divide-y divide-slate-800 text-slate-200">
+                                {% for proc in dados.processos_prontuario %}
+                                <tr class="hover:bg-slate-800/40">
+                                    <td class="p-3 font-mono text-accentBlue font-semibold cursor-pointer" onclick="verArvoreProcesso('{{ proc.npu }}')">{{ proc.npu }}</td>
+                                    <td class="p-3 text-emerald-400 font-medium">{{ proc.credor }}</td>
+                                    <td class="p-3 text-slate-200 font-medium">{{ proc.devedor }}</td>
+                                    <td class="p-3 text-slate-400">{{ proc.comarca }}</td>
+                                    <td class="p-3"><span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-amber-400 border border-slate-700">{{ proc.fase }}</span></td>
+                                    <td class="p-3 font-bold text-white">{{ proc.scoring }}</td>
+                                    <td class="p-3">
+                                        <button onclick="verArvoreProcesso('{{ proc.npu }}')" class="bg-accentBlue/20 hover:bg-accentBlue/40 text-accentBlue border border-accentBlue/30 px-2 py-1 rounded text-[11px] transition">
+                                            <i class="fa-solid fa-sitemap mr-1"></i> Abrir Árvore
+                                        </button>
+                                    </td>
+                                </tr>
+                                {% else %}
+                                <tr>
+                                    <td colspan="7" class="p-4 text-center text-slate-500">Nenhum processo cadastrado na base.</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 5: RADAR DE GARGALOS -->
+            <section id="tab-radar" class="tab-content hidden space-y-6">
+                <div class="bg-cardBg p-5 rounded-xl border border-slate-800 space-y-4">
+                    <h2 class="font-bold text-lg text-white">Radar de Gargalos & Alertas Processuais</h2>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- MODAL 1: ÁRVORE DO PROCESSO -->
+    <div class="modal fade" id="modalArvoreProcesso" tabindex="-1" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable" style="max-width: 90%; margin: 2rem auto;">
+            <div class="modal-content bg-slate-900 text-slate-100 border border-slate-800 rounded-xl shadow-2xl">
+                <div class="modal-header border-b border-slate-800 px-6 py-4 flex justify-between items-center">
+                    <h5 class="modal-title font-bold text-base text-accentBlue" id="modalTitulo">Árvore do Processo</h5>
+                    <button type="button" class="text-slate-400 hover:text-white text-lg font-bold" data-bs-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body p-6 space-y-4 overflow-y-auto" id="modalConteudoArvore" style="max-height: 75vh;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 2: PROCESSOS INTEGRANTES DO DIAGNÓSTICO COGNITIVO (IA) -->
+    <div class="modal fade" id="modalDiagnosticoIA" tabindex="-1" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" style="max-width: 80%; margin: 2rem auto;">
+            <div class="modal-content bg-slate-900 text-slate-100 border border-slate-800 rounded-xl shadow-2xl">
+                <div class="modal-header border-b border-slate-800 px-6 py-4 flex justify-between items-center">
+                    <h5 class="modal-title font-bold text-base text-amber-400 flex items-center gap-2" id="modalDiagnosticoTitulo">
+                        <i class="fa-solid fa-brain"></i> Diagnóstico IA: Processos Mapeados na Base Real
+                    </h5>
+                    <button type="button" class="text-slate-400 hover:text-white text-lg font-bold" data-bs-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body p-6 overflow-y-auto" id="modalDiagnosticoConteudo" style="max-height: 70vh;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tabelaDataTable = null;
+
+        $(document).ready(function() {
+            initDataTable();
+        });
+
+        function initDataTable() {
+            if ($.fn.DataTable.isDataTable('#tabelaProcessos')) {
+                $('#tabelaProcessos').DataTable().destroy();
+            }
+
+            tabelaDataTable = $('#tabelaProcessos').DataTable({
+                orderCellsTop: true,
+                fixedHeader: true,
+                language: {
+                    url: '//cdn.datatables.net/plug-ins/1.13.6/i18n/pt-BR.json'
+                },
+                pageLength: 25,
+                dom: '<"flex justify-between items-center mb-4"lf>rt<"flex justify-between items-center mt-4"ip>'
+            });
+
+            $('#filtrosCabecalho input').on('keyup change', function() {
+                var colIndex = $(this).parent().index();
+                tabelaDataTable.column(colIndex).search(this.value).draw();
+            });
+        }
+
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('aside button').forEach(el => {
+                el.classList.remove('bg-accentBlue', 'text-white');
+                el.classList.add('text-slate-400');
+            });
+
+            document.getElementById('tab-' + tabId).classList.remove('hidden');
+            const activeBtn = document.getElementById('btn-' + tabId);
+            if (activeBtn) {
+                activeBtn.classList.remove('text-slate-400');
+                activeBtn.classList.add('bg-accentBlue', 'text-white');
+            }
+        }
+
+        function aplicarFiltros(e) {
+            e.preventDefault();
+            const cliente = document.getElementById('filtro-cliente').value;
+            const assessoria = document.getElementById('filtro-assessoria').value;
+            const parte_ativa = document.getElementById('filtro-parte-ativa').value;
+            const parte_passiva = document.getElementById('filtro-parte-passiva').value;
+            const periodo = document.getElementById('filtro-periodo').value;
+            const carteira = document.getElementById('filtro-carteira').value;
+
+            const url = `/api/dados?cliente=${encodeURIComponent(cliente)}&assessoria=${encodeURIComponent(assessoria)}&parte_ativa=${encodeURIComponent(parte_ativa)}&parte_passiva=${encodeURIComponent(parte_passiva)}&periodo=${encodeURIComponent(periodo)}&carteira=${encodeURIComponent(carteira)}`;
+
+            fetch(url)
+                .then(res => res.json())
+                .then(dados => {
+                    atualizarInterface(dados);
+                })
+                .catch(err => console.error("Erro ao filtrar dados:", err));
+        }
+
+        function atualizarInterface(dados) {
+            document.getElementById('kpi-acordos-qtd').innerText = dados.kpis.acordos_qtd;
+            document.getElementById('kpi-acordos-mediana').innerText = dados.kpis.acordos_mediana;
+            document.getElementById('kpi-acordos-meta').innerText = dados.kpis.acordos_meta;
+
+            document.getElementById('kpi-leadtime').innerText = dados.kpis.lead_time;
+            document.getElementById('kpi-mediana').innerText = dados.kpis.mediana_lead_time;
+            document.getElementById('kpi-meta-leadtime').innerText = dados.kpis.meta_lead_time;
+
+            document.getElementById('lt-etapa1').innerText = dados.kpis.lead_time_etapas.etapa1;
+            document.getElementById('lt-etapa2').innerText = dados.kpis.lead_time_etapas.etapa2;
+            document.getElementById('lt-etapa3').innerText = dados.kpis.lead_time_etapas.etapa3;
+
+            document.getElementById('kpi-sisbajud-qtd').innerText = dados.kpis.sisbajud_qtd;
+            document.getElementById('kpi-sisbajud-mediana').innerText = dados.kpis.sisbajud_mediana;
+            document.getElementById('kpi-sisbajud-meta').innerText = dados.kpis.sisbajud_meta;
+
+            document.getElementById('kpi-passivo-qtd').innerText = dados.kpis.passivo_qtd;
+            document.getElementById('kpi-passivo-mediana').innerText = dados.kpis.passivo_mediana;
+            document.getElementById('kpi-passivo-fav').innerText = dados.kpis.passivo_favoravel_sub;
+
+            const tbodyRanking = document.getElementById('tbody-ranking-torre');
+            if (dados.assessorias_ranking.length === 0) {
+                tbodyRanking.innerHTML = '<tr><td colspan="6" class="p-4 text-center text-slate-500">Nenhuma assessoria registrada na base real para os filtros selecionados.</td></tr>';
+            } else {
+                tbodyRanking.innerHTML = dados.assessorias_ranking.map(r => `
+                    <tr class="hover:bg-slate-800/40 transition">
+                        <td class="p-3 font-semibold text-white">${r.posicao} • ${r.nome}</td>
+                        <td class="p-3 text-emerald-400 font-bold text-sm">${r.score_360}</td>
+                        <td class="p-3 font-mono text-amber-400 font-semibold">${r.velocidade_exitos}</td>
+                        <td class="p-3 font-mono text-slate-300">${r.sucesso_bloqueio}</td>
+                        <td class="p-3 font-medium text-slate-300">${r.passivos_perdas}</td>
+                        <td class="p-3 font-semibold ${r.status_class}">${r.status_sla}</td>
+                    </tr>
+                `).join('');
+            }
+        }
+
+        function verProcessosDiagnostico(tipoAlerta) {
+            $('#modalDiagnosticoConteudo').html('<div class="text-center p-8"><i class="fa-solid fa-spinner fa-spin text-2xl text-amber-400"></i><p class="mt-2 text-xs text-slate-400">Consultando base de dados real...</p></div>');
+            
+            var modal = new bootstrap.Modal(document.getElementById('modalDiagnosticoIA'));
+            modal.show();
+
+            fetch('/api/diagnostico_processos/' + encodeURIComponent(tipoAlerta))
+                .then(res => res.json())
+                .then(data => {
+                    let html = `
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left text-xs">
+                                <thead>
+                                    <tr class="bg-slate-800 text-slate-300 uppercase text-[10px]">
+                                        <th class="p-2.5">NPU / Processo</th>
+                                        <th class="p-2.5">Devedor</th>
+                                        <th class="p-2.5">Assessoria</th>
+                                        <th class="p-2.5">Marco Atual</th>
+                                        <th class="p-2.5">Situação</th>
+                                        <th class="p-2.5">Ação</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-800 text-slate-200">`;
+
+                    if (data.processos.length === 0) {
+                        html += '<tr><td colspan="6" class="p-4 text-center text-slate-500">Nenhum processo mapeado nesta categoria na base atual.</td></tr>';
+                    } else {
+                        data.processos.forEach(p => {
+                            html += `
+                                <tr class="hover:bg-slate-800/50">
+                                    <td class="p-2.5 font-mono text-accentBlue font-bold">${p.npu}</td>
+                                    <td class="p-2.5">${p.devedor}</td>
+                                    <td class="p-2.5 font-medium text-slate-300">${p.assessoria}</td>
+                                    <td class="p-2.5 font-bold text-amber-400">${p.atraso_dias}</td>
+                                    <td class="p-2.5 text-slate-300">${p.recomendacao}</td>
+                                    <td class="p-2.5">
+                                        <button onclick="verArvoreProcesso('${p.npu}')" class="bg-accentBlue/20 text-accentBlue border border-accentBlue/30 px-2 py-0.5 rounded text-[10px]">
+                                            Ver Árvore
+                                        </button>
+                                    </td>
+                                </tr>`;
+                        });
+                    }
+
+                    html += '</tbody></table></div>';
+                    $('#modalDiagnosticoConteudo').html(html);
+                });
+        }
+
+        function verArvoreProcesso(npu) {
+            $('#modalTitulo').text('Árvore do Processo: ' + npu);
+            $('#modalConteudoArvore').html('<div class="text-center p-8"><i class="fa-solid fa-spinner fa-spin text-2xl text-accentBlue"></i><p class="mt-2 text-xs text-slate-400">Carregando árvore do banco SQLite...</p></div>');
+            
+            var modalElement = new bootstrap.Modal(document.getElementById('modalArvoreProcesso'));
+            modalElement.show();
+
+            fetch('/api/processo/' + encodeURIComponent(npu))
+                .then(res => res.json())
+                .then(data => {
+                    if (data.erro) {
+                        $('#modalConteudoArvore').html(`<div class="p-4 bg-red-500/10 border border-red-500/20 text-red-400 rounded-lg">${data.erro}</div>`);
+                        return;
+                    }
+
+                    let html = `
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 bg-slate-800/50 p-4 rounded-lg border border-slate-700/50 mb-4">
+                            <div><span class="text-slate-400 text-xs block">Processo (NPU)</span><strong class="text-white text-sm font-mono">${data.processo.npu}</strong></div>
+                            <div><span class="text-slate-400 text-xs block">Marco Atual</span><span class="text-amber-400 font-bold text-sm">Marco M${data.processo.marco_atual || 1}</span></div>
+                            <div><span class="text-slate-400 text-xs block">Status Monitoramento</span><span class="text-emerald-400 font-bold text-sm">${data.processo.status_monitoramento || 'Ativo'}</span></div>
+                        </div>
+
+                        <h6 class="font-bold text-sm text-white mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-timeline text-accentBlue"></i> Árvore Cronológica de Movimentos (${data.movimentos.length})
+                        </h6>
+                        <div class="space-y-2">`;
+
+                    if (data.movimentos.length === 0) {
+                        html += '<p class="text-xs text-slate-500 p-3 bg-slate-800 rounded">Nenhuma movimentação registrada.</p>';
+                    } else {
+                        data.movimentos.forEach(m => {
+                            let docPath = m.arquivo_documento || '';
+                            let linkPdf = '';
+                            
+                            if (docPath) {
+                                let cleanPath = docPath.replace(/\\/g, '/');
+                                if (!cleanPath.startsWith('downloads/') && !cleanPath.startsWith('/downloads/')) {
+                                    cleanPath = 'downloads/' + cleanPath;
+                                }
+                                if (!cleanPath.startsWith('/')) {
+                                    cleanPath = '/' + cleanPath;
+                                }
+
+                                linkPdf = `<a href="${cleanPath}" target="_blank" class="inline-flex items-center gap-1 bg-red-500/20 text-red-400 border border-red-500/30 px-2 py-0.5 rounded text-[11px] hover:bg-red-500/30 transition">
+                                            <i class="fa-solid fa-file-pdf"></i> Ver PDF Oficial
+                                         </a>`;
+                            }
+
+                            html += `
+                                <div class="p-3 bg-slate-800/80 border border-slate-700 rounded-lg flex flex-col gap-1">
+                                    <div class="flex justify-between items-center">
+                                        <span class="font-bold text-xs text-white">${m.data_movimento || 'Data N/I'} - ${m.nome_movimento}</span>
+                                        <span class="px-2 py-0.5 rounded text-[10px] bg-accentBlue/10 text-accentBlue border border-accentBlue/20 font-semibold">${m.fonte_detalhe || 'Sistema'}</span>
+                                    </div>
+                                    <p class="text-xs text-slate-300 mt-1">${m.descricao_movimento || 'Sem descrição.'}</p>
+                                    <div class="mt-2 flex justify-between items-center">
+                                        <small class="text-[10px] text-slate-500">${m.orgao_julgador || ''}</small>
+                                        ${linkPdf}
+                                    </div>
+                                </div>`;
+                        });
+                    }
+
+                    html += '</div>';
+                    $('#modalConteudoArvore').html(html);
+                })
+                .catch(err => {
+                    $('#modalConteudoArvore').html('<div class="p-4 bg-red-500/10 text-red-400 rounded">Erro de conexão ao carregar a árvore do processo.</div>');
+                });
+        }
+    </script>
+</body>
+</html>

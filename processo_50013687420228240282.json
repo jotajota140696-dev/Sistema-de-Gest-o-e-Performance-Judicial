@@ -1,0 +1,2777 @@
+{
+    "id": "TJSC_G1_50013687420228240282",
+    "tribunal": "TJSC",
+    "grau": "G1",
+    "numeroProcesso": "50013687420228240282",
+    "dataAjuizamento": "20220422140842",
+    "nivelSigilo": 0,
+    "orgaoJulgador": {
+        "codigo": 5633,
+        "nome": "1ª Vara da Comarca de Jaguaruna",
+        "codigoMunicipioIBGE": 4208807
+    },
+    "classe": {
+        "codigo": 12154,
+        "nome": "Execução de Título Extrajudicial"
+    },
+    "sistema": {
+        "codigo": 4,
+        "nome": "Projudi"
+    },
+    "formato": {
+        "codigo": 1,
+        "nome": "Eletrônico"
+    },
+    "dataHoraUltimaAtualizacao": "2026-08-14T10:03:26.130000Z",
+    "@timestamp": "2026-08-14T10:03:26.130000Z",
+    "movimentos": [
+        {
+            "codigo": 581,
+            "dataHora": "2026-07-27T12:34:22.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 116,
+                    "nome": "Informações"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 92,
+            "dataHora": "2026-07-23T03:52:38.000Z",
+            "nome": "Publicação",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2026-07-22T10:54:38.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 1061,
+            "dataHora": "2026-07-22T03:12:05.000Z",
+            "nome": "Disponibilização no Diário da Justiça Eletrônico",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 92,
+            "dataHora": "2026-06-29T03:51:43.000Z",
+            "nome": "Publicação",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 1061,
+            "dataHora": "2026-06-26T03:16:18.000Z",
+            "nome": "Disponibilização no Diário da Justiça Eletrônico",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2026-06-25T19:20:45.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 78,
+                    "nome": "Mandado"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 60,
+            "dataHora": "2026-06-23T11:16:07.000Z",
+            "nome": "Expedição de documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 78,
+                    "nome": "Mandado"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2026-06-12T12:53:14.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 116,
+                    "nome": "Informações"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 92,
+            "dataHora": "2026-06-12T03:48:16.000Z",
+            "nome": "Publicação",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2026-06-11T08:55:09.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 1061,
+            "dataHora": "2026-06-11T03:05:22.000Z",
+            "nome": "Disponibilização no Diário da Justiça Eletrônico",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 60,
+            "dataHora": "2026-06-10T18:41:20.000Z",
+            "nome": "Expedição de documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2026-06-10T18:36:45.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 92,
+            "dataHora": "2026-05-25T02:38:07.000Z",
+            "nome": "Publicação",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 1061,
+            "dataHora": "2026-05-22T02:07:22.000Z",
+            "nome": "Disponibilização no Diário da Justiça Eletrônico",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2026-05-12T15:35:53.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2026-05-12T14:50:58.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 107,
+                    "nome": "Certidão"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2026-05-08T15:50:57.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 92,
+            "dataHora": "2026-05-08T03:03:29.000Z",
+            "nome": "Publicação",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 1061,
+            "dataHora": "2026-05-07T02:27:31.000Z",
+            "nome": "Disponibilização no Diário da Justiça Eletrônico",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2026-05-06T18:00:16.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 1051,
+            "dataHora": "2026-02-13T01:50:12.000Z",
+            "nome": "Decurso de Prazo",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2025-12-16T16:00:15.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 78,
+                    "nome": "Mandado"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 60,
+            "dataHora": "2025-11-11T12:43:08.000Z",
+            "nome": "Expedição de documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 78,
+                    "nome": "Mandado"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2025-11-06T12:39:18.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 116,
+                    "nome": "Informações"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2025-10-31T09:15:23.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 92,
+            "dataHora": "2025-10-29T03:00:10.000Z",
+            "nome": "Publicação",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 1061,
+            "dataHora": "2025-10-27T02:20:02.000Z",
+            "nome": "Disponibilização no Diário da Justiça Eletrônico",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 123,
+            "dataHora": "2025-09-23T12:38:16.000Z",
+            "nome": "Remessa",
+            "complementosTabelados": [
+                {
+                    "codigo": 18,
+                    "descricao": "motivo_da_remessa",
+                    "valor": 40,
+                    "nome": "outros motivos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2025-09-23T12:38:11.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2025-09-23T12:38:11.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 60,
+            "dataHora": "2025-09-22T20:47:00.000Z",
+            "nome": "Expedição de documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 60,
+            "dataHora": "2025-09-22T20:47:00.000Z",
+            "nome": "Expedição de documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 92,
+            "dataHora": "2025-09-19T02:38:03.000Z",
+            "nome": "Publicação",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 1061,
+            "dataHora": "2025-09-18T02:06:06.000Z",
+            "nome": "Disponibilização no Diário da Justiça Eletrônico",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2025-09-03T12:16:54.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2025-09-03T12:16:54.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2025-09-02T18:46:00.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 107,
+                    "nome": "Certidão"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 123,
+            "dataHora": "2025-08-25T16:38:48.000Z",
+            "nome": "Remessa",
+            "complementosTabelados": [
+                {
+                    "codigo": 18,
+                    "descricao": "motivo_da_remessa",
+                    "valor": 40,
+                    "nome": "outros motivos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2025-08-21T13:34:07.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 123,
+            "dataHora": "2025-08-13T14:25:21.000Z",
+            "nome": "Remessa",
+            "complementosTabelados": [
+                {
+                    "codigo": 18,
+                    "descricao": "motivo_da_remessa",
+                    "valor": 40,
+                    "nome": "outros motivos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2025-08-11T17:40:30.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2025-08-08T14:20:03.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 1051,
+            "dataHora": "2025-06-19T01:21:15.000Z",
+            "nome": "Decurso de Prazo",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2025-06-11T13:03:11.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 78,
+                    "nome": "Mandado"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 60,
+            "dataHora": "2025-06-09T14:08:41.000Z",
+            "nome": "Expedição de documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 78,
+                    "nome": "Mandado"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2025-04-09T09:16:27.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 116,
+                    "nome": "Informações"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2025-03-31T11:33:53.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 51,
+            "dataHora": "2025-01-28T13:37:26.000Z",
+            "nome": "Conclusão",
+            "complementosTabelados": [
+                {
+                    "codigo": 3,
+                    "descricao": "tipo_de_conclusao",
+                    "valor": 6,
+                    "nome": "para decisão"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 1051,
+            "dataHora": "2024-09-21T01:16:58.000Z",
+            "nome": "Decurso de Prazo",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 92,
+            "dataHora": "2024-09-13T02:30:28.000Z",
+            "nome": "Publicação",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 1061,
+            "dataHora": "2024-09-12T02:00:13.000Z",
+            "nome": "Disponibilização no Diário da Justiça Eletrônico",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 123,
+            "dataHora": "2024-07-24T19:37:01.000Z",
+            "nome": "Remessa",
+            "complementosTabelados": [
+                {
+                    "codigo": 18,
+                    "descricao": "motivo_da_remessa",
+                    "valor": 40,
+                    "nome": "outros motivos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2024-07-24T19:36:59.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2024-07-24T19:36:59.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 60,
+            "dataHora": "2024-07-24T14:03:34.000Z",
+            "nome": "Expedição de documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 60,
+            "dataHora": "2024-07-24T14:03:34.000Z",
+            "nome": "Expedição de documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 123,
+            "dataHora": "2024-07-10T16:31:09.000Z",
+            "nome": "Remessa",
+            "complementosTabelados": [
+                {
+                    "codigo": 18,
+                    "descricao": "motivo_da_remessa",
+                    "valor": 40,
+                    "nome": "outros motivos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 123,
+            "dataHora": "2024-06-27T16:18:14.000Z",
+            "nome": "Remessa",
+            "complementosTabelados": [
+                {
+                    "codigo": 18,
+                    "descricao": "motivo_da_remessa",
+                    "valor": 40,
+                    "nome": "outros motivos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 51,
+            "dataHora": "2024-05-15T15:30:25.000Z",
+            "nome": "Conclusão",
+            "complementosTabelados": [
+                {
+                    "codigo": 3,
+                    "descricao": "tipo_de_conclusao",
+                    "valor": 6,
+                    "nome": "para decisão"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 1051,
+            "dataHora": "2024-03-09T01:02:12.000Z",
+            "nome": "Decurso de Prazo",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2024-01-24T11:59:21.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 78,
+                    "nome": "Mandado"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 60,
+            "dataHora": "2024-01-22T14:31:43.000Z",
+            "nome": "Expedição de documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 78,
+                    "nome": "Mandado"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2023-11-14T09:00:16.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 116,
+                    "nome": "Informações"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2023-11-01T11:07:10.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2023-11-01T11:07:05.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2023-07-31T12:23:15.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 74,
+                    "nome": "Aviso de recebimento (AR)"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 60,
+            "dataHora": "2023-06-19T16:38:56.000Z",
+            "nome": "Expedição de documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 79,
+                    "nome": "Ofício"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2023-06-02T09:09:05.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 116,
+                    "nome": "Informações"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2023-05-22T11:24:43.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2023-05-22T11:24:37.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 1051,
+            "dataHora": "2023-05-09T01:16:06.000Z",
+            "nome": "Decurso de Prazo",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2023-04-19T13:36:02.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 78,
+                    "nome": "Mandado"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2023-04-13T13:35:36.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 78,
+                    "nome": "Mandado"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 60,
+            "dataHora": "2023-04-12T14:10:01.000Z",
+            "nome": "Expedição de documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 78,
+                    "nome": "Mandado"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 60,
+            "dataHora": "2023-04-12T14:09:58.000Z",
+            "nome": "Expedição de documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 78,
+                    "nome": "Mandado"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2023-02-22T09:11:36.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 116,
+                    "nome": "Informações"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2023-02-14T17:25:36.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2023-02-14T17:25:31.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12455,
+            "dataHora": "2023-01-22T16:10:31.000Z",
+            "nome": "Indeferimento",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 51,
+            "dataHora": "2023-01-18T16:19:44.000Z",
+            "nome": "Conclusão",
+            "complementosTabelados": [
+                {
+                    "codigo": 3,
+                    "descricao": "tipo_de_conclusao",
+                    "valor": 5,
+                    "nome": "para despacho"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2022-12-07T12:38:44.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 74,
+                    "nome": "Aviso de recebimento (AR)"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2022-12-07T12:38:44.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 74,
+                    "nome": "Aviso de recebimento (AR)"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 60,
+            "dataHora": "2022-11-22T16:40:09.000Z",
+            "nome": "Expedição de documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 79,
+                    "nome": "Ofício"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2022-10-06T15:25:13.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 116,
+                    "nome": "Informações"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2022-10-04T16:39:39.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2022-10-04T16:39:34.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2022-09-10T08:03:08.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 107,
+                    "nome": "Certidão"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2022-09-09T21:37:13.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 51,
+            "dataHora": "2022-09-09T06:16:42.000Z",
+            "nome": "Conclusão",
+            "complementosTabelados": [
+                {
+                    "codigo": 3,
+                    "descricao": "tipo_de_conclusao",
+                    "valor": 6,
+                    "nome": "para decisão"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2022-08-25T12:38:05.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 78,
+                    "nome": "Mandado"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 60,
+            "dataHora": "2022-08-22T11:37:04.000Z",
+            "nome": "Expedição de documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 78,
+                    "nome": "Mandado"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2022-07-27T13:49:30.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 116,
+                    "nome": "Informações"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2022-07-25T16:24:20.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2022-07-25T16:24:15.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 51,
+            "dataHora": "2022-07-05T13:00:25.000Z",
+            "nome": "Conclusão",
+            "complementosTabelados": [
+                {
+                    "codigo": 3,
+                    "descricao": "tipo_de_conclusao",
+                    "valor": 6,
+                    "nome": "para decisão"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2022-06-14T19:00:54.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 78,
+                    "nome": "Mandado"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 60,
+            "dataHora": "2022-06-07T14:20:31.000Z",
+            "nome": "Expedição de documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 78,
+                    "nome": "Mandado"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2022-05-19T13:29:30.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 74,
+                    "nome": "Aviso de recebimento (AR)"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 60,
+            "dataHora": "2022-05-09T19:09:15.000Z",
+            "nome": "Expedição de documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 79,
+                    "nome": "Ofício"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 51,
+            "dataHora": "2022-04-27T17:45:46.000Z",
+            "nome": "Conclusão",
+            "complementosTabelados": [
+                {
+                    "codigo": 3,
+                    "descricao": "tipo_de_conclusao",
+                    "valor": 6,
+                    "nome": "para decisão"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2022-04-27T16:33:06.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 116,
+                    "nome": "Informações"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2022-04-22T14:10:26.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2022-04-22T14:10:20.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 80,
+                    "nome": "Outros documentos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 26,
+            "dataHora": "2022-04-22T14:08:42.000Z",
+            "nome": "Distribuição",
+            "complementosTabelados": [
+                {
+                    "codigo": 2,
+                    "descricao": "tipo_de_distribuicao_redistribuicao",
+                    "valor": 2,
+                    "nome": "sorteio"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2026-07-29T11:41:45.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12282,
+            "dataHora": "2026-07-22T10:54:40.000Z",
+            "nome": "Expedida/Certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12265,
+            "dataHora": "2026-07-21T17:04:46.000Z",
+            "nome": "Expedida/certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 11383,
+            "dataHora": "2026-07-21T17:04:45.000Z",
+            "nome": "Ato ordinatório",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2026-07-13T16:34:52.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12265,
+            "dataHora": "2026-06-25T19:20:48.000Z",
+            "nome": "Expedida/certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 11383,
+            "dataHora": "2026-06-25T19:20:46.000Z",
+            "nome": "Ato ordinatório",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 985,
+            "dataHora": "2026-06-23T12:02:42.000Z",
+            "nome": "Mandado",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2026-06-15T08:39:23.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12282,
+            "dataHora": "2026-06-11T08:55:11.000Z",
+            "nome": "Expedida/Certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12265,
+            "dataHora": "2026-06-10T18:43:52.000Z",
+            "nome": "Expedida/certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 11383,
+            "dataHora": "2026-06-10T18:43:49.000Z",
+            "nome": "Ato ordinatório",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2026-06-01T10:34:06.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12265,
+            "dataHora": "2026-05-21T08:52:34.000Z",
+            "nome": "Expedida/certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 11383,
+            "dataHora": "2026-05-21T08:52:33.000Z",
+            "nome": "Ato ordinatório",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2026-05-12T10:06:27.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2026-05-12T10:05:51.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12282,
+            "dataHora": "2026-05-12T10:05:15.000Z",
+            "nome": "Expedida/Certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2026-05-06T16:02:27.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12266,
+            "dataHora": "2026-05-06T16:02:25.000Z",
+            "nome": "Confirmada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12265,
+            "dataHora": "2026-05-06T14:23:20.000Z",
+            "nome": "Expedida/certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 11383,
+            "dataHora": "2026-05-06T14:23:20.000Z",
+            "nome": "Ato ordinatório",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 985,
+            "dataHora": "2025-11-11T12:58:16.000Z",
+            "nome": "Mandado",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2025-11-05T09:26:52.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12282,
+            "dataHora": "2025-10-31T09:15:24.000Z",
+            "nome": "Expedida/Certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12265,
+            "dataHora": "2025-10-24T16:45:45.000Z",
+            "nome": "Expedida/certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 11383,
+            "dataHora": "2025-10-24T16:45:44.000Z",
+            "nome": "Ato ordinatório",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12282,
+            "dataHora": "2025-09-25T10:49:57.000Z",
+            "nome": "Expedida/Certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12282,
+            "dataHora": "2025-09-25T10:48:58.000Z",
+            "nome": "Expedida/Certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2025-09-19T14:14:09.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12265,
+            "dataHora": "2025-09-17T12:24:45.000Z",
+            "nome": "Expedida/certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 11383,
+            "dataHora": "2025-09-17T12:24:44.000Z",
+            "nome": "Ato ordinatório",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2025-09-01T15:19:28.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2025-09-01T15:12:19.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 16,
+            "dataHora": "2025-08-21T13:34:08.000Z",
+            "nome": "Cálculo",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12282,
+            "dataHora": "2025-08-13T09:48:23.000Z",
+            "nome": "Expedida/Certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2025-07-02T11:05:01.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 985,
+            "dataHora": "2025-06-10T12:08:15.000Z",
+            "nome": "Mandado",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2025-03-31T11:35:33.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12282,
+            "dataHora": "2025-03-31T11:33:55.000Z",
+            "nome": "Expedida/Certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12266,
+            "dataHora": "2025-03-24T23:59:59.000Z",
+            "nome": "Confirmada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12265,
+            "dataHora": "2025-03-12T15:50:34.000Z",
+            "nome": "Expedida/certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 11383,
+            "dataHora": "2025-03-12T15:50:34.000Z",
+            "nome": "Ato ordinatório",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2025-02-03T17:38:23.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12266,
+            "dataHora": "2025-02-03T17:38:21.000Z",
+            "nome": "Confirmada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12265,
+            "dataHora": "2025-02-03T15:18:58.000Z",
+            "nome": "Expedida/certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12164,
+            "dataHora": "2025-02-03T15:18:56.000Z",
+            "nome": "Outras Decisões",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2024-10-29T20:44:42.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12266,
+            "dataHora": "2024-10-25T23:59:59.000Z",
+            "nome": "Confirmada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12265,
+            "dataHora": "2024-10-15T14:47:10.000Z",
+            "nome": "Expedida/certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 11383,
+            "dataHora": "2024-10-15T14:47:08.000Z",
+            "nome": "Ato ordinatório",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2024-10-11T16:06:14.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12266,
+            "dataHora": "2024-10-11T16:06:12.000Z",
+            "nome": "Confirmada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2024-10-11T16:06:00.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2024-10-11T16:04:36.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12265,
+            "dataHora": "2024-10-11T16:01:49.000Z",
+            "nome": "Expedida/certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 11383,
+            "dataHora": "2024-10-11T16:01:48.000Z",
+            "nome": "Ato ordinatório",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 11383,
+            "dataHora": "2024-09-11T14:21:32.000Z",
+            "nome": "Ato ordinatório",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12265,
+            "dataHora": "2024-09-11T14:21:32.000Z",
+            "nome": "Expedida/certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 11383,
+            "dataHora": "2024-09-11T14:19:53.000Z",
+            "nome": "Ato ordinatório",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12282,
+            "dataHora": "2024-07-30T11:26:16.000Z",
+            "nome": "Expedida/Certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12282,
+            "dataHora": "2024-07-26T11:27:18.000Z",
+            "nome": "Expedida/Certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 16,
+            "dataHora": "2024-06-28T18:31:10.000Z",
+            "nome": "Cálculo",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2024-06-17T13:23:00.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12266,
+            "dataHora": "2024-06-17T13:22:58.000Z",
+            "nome": "Confirmada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12265,
+            "dataHora": "2024-06-11T16:04:11.000Z",
+            "nome": "Expedida/certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12164,
+            "dataHora": "2024-06-11T16:04:09.000Z",
+            "nome": "Outras Decisões",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2024-04-29T16:31:44.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12266,
+            "dataHora": "2024-04-29T16:31:42.000Z",
+            "nome": "Confirmada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12265,
+            "dataHora": "2024-04-23T15:49:36.000Z",
+            "nome": "Expedida/certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 11383,
+            "dataHora": "2024-04-23T15:49:35.000Z",
+            "nome": "Ato ordinatório",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 985,
+            "dataHora": "2024-01-23T12:21:23.000Z",
+            "nome": "Mandado",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2023-11-03T11:34:13.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12266,
+            "dataHora": "2023-10-26T23:59:59.000Z",
+            "nome": "Confirmada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12265,
+            "dataHora": "2023-10-16T19:09:18.000Z",
+            "nome": "Expedida/certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 11383,
+            "dataHora": "2023-10-16T19:09:18.000Z",
+            "nome": "Ato ordinatório",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2023-09-01T16:02:24.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12266,
+            "dataHora": "2023-08-12T23:59:59.000Z",
+            "nome": "Confirmada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12265,
+            "dataHora": "2023-08-02T18:35:40.000Z",
+            "nome": "Expedida/certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2023-05-22T11:24:17.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12266,
+            "dataHora": "2023-04-29T23:59:59.000Z",
+            "nome": "Confirmada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12265,
+            "dataHora": "2023-04-19T14:09:26.000Z",
+            "nome": "Expedida/certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 985,
+            "dataHora": "2023-04-13T12:18:30.000Z",
+            "nome": "Mandado",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 985,
+            "dataHora": "2023-04-13T12:18:17.000Z",
+            "nome": "Mandado",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2023-02-14T17:24:43.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12266,
+            "dataHora": "2023-02-01T23:59:59.000Z",
+            "nome": "Confirmada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12265,
+            "dataHora": "2023-01-22T16:10:31.000Z",
+            "nome": "Expedida/certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2022-12-15T14:58:11.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12266,
+            "dataHora": "2022-12-15T14:58:09.000Z",
+            "nome": "Confirmada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12265,
+            "dataHora": "2022-12-07T18:39:03.000Z",
+            "nome": "Expedida/certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2022-10-04T16:39:09.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12266,
+            "dataHora": "2022-09-20T23:59:59.000Z",
+            "nome": "Confirmada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2022-09-12T17:17:29.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12266,
+            "dataHora": "2022-09-12T17:17:29.000Z",
+            "nome": "Confirmada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12265,
+            "dataHora": "2022-09-10T08:03:08.000Z",
+            "nome": "Expedida/certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12265,
+            "dataHora": "2022-09-09T14:33:07.000Z",
+            "nome": "Expedida/certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12164,
+            "dataHora": "2022-09-09T14:33:06.000Z",
+            "nome": "Outras Decisões",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2022-08-25T19:06:01.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12266,
+            "dataHora": "2022-08-25T19:06:01.000Z",
+            "nome": "Confirmada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12265,
+            "dataHora": "2022-08-25T18:58:07.000Z",
+            "nome": "Expedida/certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 985,
+            "dataHora": "2022-08-22T11:55:52.000Z",
+            "nome": "Mandado",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2022-08-08T08:35:31.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12266,
+            "dataHora": "2022-08-04T23:59:59.000Z",
+            "nome": "Confirmada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12265,
+            "dataHora": "2022-07-25T15:47:44.000Z",
+            "nome": "Expedida/certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 11383,
+            "dataHora": "2022-07-25T15:47:44.000Z",
+            "nome": "Ato ordinatório",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2022-07-15T15:37:29.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12266,
+            "dataHora": "2022-07-15T15:37:29.000Z",
+            "nome": "Confirmada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12265,
+            "dataHora": "2022-07-15T13:29:37.000Z",
+            "nome": "Expedida/certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 11010,
+            "dataHora": "2022-07-15T13:29:37.000Z",
+            "nome": "Mero expediente",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2022-06-20T17:21:38.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12266,
+            "dataHora": "2022-06-20T17:21:37.000Z",
+            "nome": "Confirmada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12266,
+            "dataHora": "2022-06-17T23:59:59.000Z",
+            "nome": "Confirmada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12265,
+            "dataHora": "2022-06-15T17:17:05.000Z",
+            "nome": "Expedida/certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 985,
+            "dataHora": "2022-06-08T11:50:38.000Z",
+            "nome": "Mandado",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12265,
+            "dataHora": "2022-06-07T14:20:51.000Z",
+            "nome": "Expedida/certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 85,
+            "dataHora": "2022-05-23T16:47:58.000Z",
+            "nome": "Petição",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12266,
+            "dataHora": "2022-05-23T16:47:58.000Z",
+            "nome": "Confirmada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12265,
+            "dataHora": "2022-05-23T10:06:30.000Z",
+            "nome": "Expedida/certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12266,
+            "dataHora": "2022-05-19T23:59:59.000Z",
+            "nome": "Confirmada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12266,
+            "dataHora": "2022-05-12T23:59:59.000Z",
+            "nome": "Confirmada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12265,
+            "dataHora": "2022-05-09T19:09:45.000Z",
+            "nome": "Expedida/certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 11383,
+            "dataHora": "2022-05-09T19:09:45.000Z",
+            "nome": "Ato ordinatório",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 12265,
+            "dataHora": "2022-05-02T16:24:32.000Z",
+            "nome": "Expedida/certificada",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        },
+        {
+            "codigo": 11010,
+            "dataHora": "2022-05-02T16:24:31.000Z",
+            "nome": "Mero expediente",
+            "orgaoJulgador": {
+                "codigo": "5633",
+                "nome": "1ª Vara da Comarca de Jaguaruna"
+            }
+        }
+    ],
+    "assuntos": [
+        {
+            "codigo": 4960,
+            "nome": "Cédula de Crédito Bancário"
+        }
+    ]
+}

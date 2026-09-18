@@ -1,0 +1,165 @@
+{
+    "id": "TJSC_G2_50878309320238240930",
+    "tribunal": "TJSC",
+    "grau": "G2",
+    "numeroProcesso": "50878309320238240930",
+    "dataAjuizamento": "20260318175633",
+    "nivelSigilo": 0,
+    "orgaoJulgador": {
+        "codigo": 90725,
+        "nome": "Gab. 04 - 1ª Câmara Especial de Enfrentamento de Acervos",
+        "codigoMunicipioIBGE": 4205407
+    },
+    "classe": {
+        "codigo": 198,
+        "nome": "Apelação Cível"
+    },
+    "sistema": {
+        "codigo": 4,
+        "nome": "Projudi"
+    },
+    "formato": {
+        "codigo": 1,
+        "nome": "Eletrônico"
+    },
+    "dataHoraUltimaAtualizacao": "2026-07-10T09:43:51.439000Z",
+    "@timestamp": "2026-07-10T09:43:51.439000Z",
+    "movimentos": [
+        {
+            "codigo": 123,
+            "dataHora": "2026-06-02T14:38:19.000Z",
+            "nome": "Remessa",
+            "orgaoJulgador": {
+                "codigo": "90782",
+                "nome": "Gab. 01 - 5ª Câmara de Direito Comercial"
+            }
+        },
+        {
+            "codigo": 123,
+            "dataHora": "2026-06-02T14:38:19.000Z",
+            "nome": "Remessa",
+            "orgaoJulgador": {
+                "codigo": "90782",
+                "nome": "Gab. 01 - 5ª Câmara de Direito Comercial"
+            }
+        },
+        {
+            "codigo": 51,
+            "dataHora": "2026-03-24T17:11:39.000Z",
+            "nome": "Conclusão",
+            "complementosTabelados": [
+                {
+                    "codigo": 3,
+                    "descricao": "tipo_de_conclusao",
+                    "valor": 6,
+                    "nome": "para decisão"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "90782",
+                "nome": "Gab. 01 - 5ª Câmara de Direito Comercial"
+            }
+        },
+        {
+            "codigo": 581,
+            "dataHora": "2026-03-24T17:11:39.000Z",
+            "nome": "Documento",
+            "complementosTabelados": [
+                {
+                    "codigo": 4,
+                    "descricao": "tipo_de_documento",
+                    "valor": 107,
+                    "nome": "Certidão"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "90782",
+                "nome": "Gab. 01 - 5ª Câmara de Direito Comercial"
+            }
+        },
+        {
+            "codigo": 123,
+            "dataHora": "2026-03-20T13:35:51.000Z",
+            "nome": "Remessa",
+            "complementosTabelados": [
+                {
+                    "codigo": 18,
+                    "descricao": "motivo_da_remessa",
+                    "valor": 40,
+                    "nome": "outros motivos"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "90782",
+                "nome": "Gab. 01 - 5ª Câmara de Direito Comercial"
+            }
+        },
+        {
+            "codigo": 26,
+            "dataHora": "2026-03-18T17:56:33.000Z",
+            "nome": "Distribuição",
+            "complementosTabelados": [
+                {
+                    "codigo": 2,
+                    "descricao": "tipo_de_distribuicao_redistribuicao",
+                    "valor": 2,
+                    "nome": "sorteio"
+                }
+            ],
+            "orgaoJulgador": {
+                "codigo": "90782",
+                "nome": "Gab. 01 - 5ª Câmara de Direito Comercial"
+            }
+        },
+        {
+            "codigo": 36,
+            "dataHora": "2026-06-12T16:57:41.000Z",
+            "nome": "Redistribuição",
+            "orgaoJulgador": {
+                "codigo": "90725",
+                "nome": "Gab. 04 - 1ª Câmara Especial de Enfrentamento de Acervos"
+            }
+        },
+        {
+            "codigo": 12143,
+            "dataHora": "2026-03-24T17:07:29.000Z",
+            "nome": "Mudança de Assunto Processual",
+            "orgaoJulgador": {
+                "codigo": "90782",
+                "nome": "Gab. 01 - 5ª Câmara de Direito Comercial"
+            }
+        },
+        {
+            "codigo": 12282,
+            "dataHora": "2026-03-18T17:56:35.000Z",
+            "nome": "Expedida/Certificada",
+            "orgaoJulgador": {
+                "codigo": "90782",
+                "nome": "Gab. 01 - 5ª Câmara de Direito Comercial"
+            }
+        },
+        {
+            "codigo": 12282,
+            "dataHora": "2026-03-18T17:56:35.000Z",
+            "nome": "Expedida/Certificada",
+            "orgaoJulgador": {
+                "codigo": "90782",
+                "nome": "Gab. 01 - 5ª Câmara de Direito Comercial"
+            }
+        }
+    ],
+    "assuntos": [
+        {
+            "codigo": 7770,
+            "nome": "Interpretação / Revisão de Contrato"
+        },
+        {
+            "codigo": 4960,
+            "nome": "Cédula de Crédito Bancário"
+        },
+        {
+            "codigo": 9607,
+            "nome": "Contratos Bancários"
+        }
+    ]
+}
