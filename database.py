@@ -291,7 +291,9 @@ def criar_tabelas():
             "tipo_garantia": "TEXT",
             "produto_origem": "TEXT",
             "marco_atual": "INTEGER DEFAULT 0",
-            "score_recuperacao": "NUMERIC"
+            "score_recuperacao": "NUMERIC",
+            "gargalo": "TEXT",
+            "resumo": "TEXT"
         }
         
         for nome_coluna, tipo_coluna in novas_colunas.items():
